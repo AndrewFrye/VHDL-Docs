@@ -1,7 +1,9 @@
 # Registers
 
+8-bit register with Async active low reset.
+
 ###### Entity
-<code-block lang="vhdl">
+```vhdl
 entity Registers is
     port (
         clk : in std_logic;
@@ -11,21 +13,26 @@ entity Registers is
         data_out : out std_logic_vector(7 downto 0)
     );
 end entity Registers;
-</code-block>
+```
 
 ###### Architecture
-<code-block lang="vhdl">
+```vhdl
 architecture Behavioral of Registers is
     signal reg : std_logic_vector(7 downto 0);
-    begin
-        Proc_Register : process (CLK)
         begin
-        if (reset = `0`) then
-            reg <= `0`;
-        elsif (rising_edge(CLK)) then
-            data_out <= D;
-            end if;
         end process;
     data_out <= reg;
 end architecture Behavioral;
-</code-block>
+```
+
+###### Register Process
+```vhdl
+Proc_Register : process (CLK)
+    begin
+        if (reset = '0') then
+            reg <= '0';
+        elsif (rising_edge(CLK)) then
+            data_out <= D;
+            end if;
+    end process;
+```
