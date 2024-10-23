@@ -4,7 +4,7 @@
 and that there is a clock signal to allow the counter to increment.
 
 ###### Counter Process
-```vhdl
+```
 Counter20_Process : process (clk)
     begin
         if (Count20 = 1000000) then 

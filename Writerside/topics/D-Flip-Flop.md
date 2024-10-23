@@ -1,7 +1,7 @@
 # D Flip-Flop
 
 ###### Entity
-```vhdl
+```
 entity Dflipflop is
     port ( CLK : in std_logic;
            D : in std_logic;
@@ -10,7 +10,7 @@ end entity;
 ```
 
 ###### Architecture
-```vhdl
+```
 architecture Dflipflop_arch of Dflipflopis
     begin
     Proc_Dflipflop: process (CLK)

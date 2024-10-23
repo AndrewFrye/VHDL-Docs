@@ -4,7 +4,7 @@ Active low decoder for a 7-segment display. The input is a 4-bit binary number a
 that represents the segments of a 7-segment display. The output is in the order of gfedcba.
 
 ###### Entity
-```vhdl
+```
 entity DEC_7_SEG is
   Port ( 
     D : in std_logic_vector(3 downto 0);
@@ -14,7 +14,7 @@ end DEC_7_SEG;
 ```
 
 ###### Architecture
-```vhdl
+```
 begin
     with (D) select
         seg7 <=

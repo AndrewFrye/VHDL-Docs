@@ -8,7 +8,7 @@ is used.
 
 This is a very barebones entity because it is only being used to drive another.
 
-```vhdl
+```
 entity TestBench is
 --  Port ( );
 end TestBench;
@@ -16,7 +16,7 @@ end TestBench;
 
 ###### Architecture
 
-```vhdl
+```
 architecture Behavioral of TestBench is
 
 --Component instantiation for the StateMachine entity
@@ -44,7 +44,7 @@ end Behavioral;
 
 ###### Clock Process
 
-```vhdl
+```
 CLOCK : process
     begin
       for i in 1 to 4 loop
@@ -59,7 +59,7 @@ CLOCK : process
 
 ###### Test Bench Process
 
-```vhdl
+```
 TB : process 
     begin
       Input_TB <= '0';
