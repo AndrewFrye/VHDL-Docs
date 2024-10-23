@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instance-profile
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
+
+<instance-profile id="in"
+                 name="VHDL Reference"
+                 start-page="Basics.md">
+
+    <toc-element topic="Basics.md"/>
+    <toc-element topic="Creating-a-Test-Bench.md"/>
+    <toc-element topic="Registers.md"/>
+    <toc-element topic="Shift-Registers.md"/>
+    <toc-element topic="State-Machine.md"/>
+    <toc-element topic="7-Segment-Display-Decoder.md"/>
+    <toc-element topic="Counter.md"/>
+    <toc-element topic="D-Flip-Flop.md"/>
+</instance-profile>
